@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>QuizMania</title>
+	<link rel="apple-touch-icon" sizes="57x57" href="./images/icones/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./images/icones/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./images/icones/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./images/icones/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./images/icones/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./images/icones/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./images/icones/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./images/icones/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/icones/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./images/icones/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/icones/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./images/icones/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/icones/favicon-16x16.png">
+	<link rel="manifest" href="./images/icones/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="./images/icones/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="./css/reseta.css">
+	<link rel="stylesheet" href="./css/fontes.css">
+	<link rel="stylesheet" href="./css/background.css">
+	<link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+	<div class="background">
+		<div class="background__container">
+			<div class="background__1">
+				<div class="background__item background__item--effect"></div>
+			</div>
+			<div class="background__2">
+				<div class="background__item background__item--effect"></div>
+			</div>
+			<div class="background__3">
+				<div class="background__item"></div>
+			</div>
+			<div class="background__4">
+				<div class="background__item"></div>
+			</div>
+		</div>
+		<div class="conteudo container">
+			<header class="header">
+				<img src="./images/logo.png" alt="Quiz Mania" class="logo" />
+				<div class="sugestoes">
+					<div class="sugestao">
+						<img src="./images/icon-lampada.png" alt="" class="sugestao_icone">
+						<a href="#" class="link__sugestao">Sugestões</a>
+					</div>
+					<form class="sugestao__formulario" method="POST">
+						<div class="sugestao__descricao">
+							Deixe sua sugestão para nosso proximo Quiz
+						</div>
+						<div class="form-group">
+							<label for="sugestao__nome" class="sugestao__label form-label">Nome:</label>
+							<input type="text" name="sugestao__nome" class="sugestao__nome form-control">
+						</div>
+						<div class="form-group">
+							<label for="sugestao__email" class="sugestao__label form-label">E-mail:</label>
+							<input type="email" name="sugestao__email" class="sugestao__email form-control">
+						</div>
+						<div class="form-group">
+							<label for="sugestao__mensagem" class="sugestao__label form-label">Mensagem:</label>
+							<textarea name="" id="" cols="30" rows="10"
+								class="sugestao__mensagem form-control"></textarea>
+						</div>
+
+						<button class="btn btn--submit btn--principal">Enviar</button>
+					</form>
+				</div>
+			</header>
+
+<!-- INICIO FORM -->
+
+
+
+
+			<div class="row mt-5">
+				<h1 class="titulo">Descubra se você é um PotterHead!</h1>
+
+				<div class="col-md-6">
+
+					<form id="quiz" name="quiz">
+						<div class="row mt-3">
+							<div class="question">
+								<h3 class="question__title mb-3">Quem foi o diretor de Hogwarts?</h3>
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" id="question1_1" name="question1"
+										value="Alvo Dumbledore">
+									<label class="custom-control-label" for="question1_1">Alvo Dumbledore</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" id="question1_2" name="question1"
+										value="Severo Snape">
+									<label class="custom-control-label" for="question1_2">Severo Snape</label>
+								</div>
+
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" id="question1_3" name="question1"
+										value="Rubeo Hagrid">
+									<label class="custom-control-label" for="question1_3">Rubeo Hagrid</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mt-3">
+							<div class="question">
+								<h3 class="question__title mb-3">Qual o nome correto da coruja de estimação de Harry?</h3>
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" id="question2_1" name="question2"
+										value="Dobby">
+									<label class="custom-control-label" for="question2_1">Dobby</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" id="question2_2" name="question2"
+										value="Hedwig">
+									<label class="custom-control-label" for="question2_2">Hedwig</label>
+								</div>
+
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" id="question2_3" name="question2"
+										value="Gollum">
+									<label class="custom-control-label" for="question2_3">Gollum</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mt-3">
+							<div class="question">
+								<h3 class="question__title mb-3">Quais os dois amigos que acompanham Harry durante a saga?
+								</h3>
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" id="question3_1" name="question3"
+										value="Draco Malfoy e Sirius Black">
+									<label class="custom-control-label" for="question3_1">Draco Malfoy e Sirius
+										Black</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" id="question3_2" name="question3"
+										value="Remo Lupin e Nagini">
+									<label class="custom-control-label" for="question3_2">Remo Lupin e Nagini</label>
+								</div>
+
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" id="question3_3" name="question3"
+										value="Hermione Granger e Rony Weasley">
+									<label class="custom-control-label" for="question3_3"> Hermione Granger e Rony Weasley</label>
+								</div>
+							</div>
+						</div>
+
+
+
+
+						<div class="row mt-3">
+							<div class="question">
+								<h3 class="question__title mb-3">O esporte praticado pelos alunos de Hogwarts é:</h3>
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" id="question4_1" name="question4"
+										value="Quadribol">
+									<label class="custom-control-label" for="question4_1">Quadribol</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" id="question4_2" name="question4"
+										value="Basketball">
+									<label class="custom-control-label" for="question4_2">Basketball</label>
+								</div>
+
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" id="question4_3" name="question4"
+										value="Magicball">
+									<label class="custom-control-label" for="question4_3">Magicball</label>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="row mt-3 mb-5">
+							<div class="question">
+								<h3 class="question__title mb-3">Quantos livros formam a história completa de Harry Potter?
+								</h3>
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" id="customRadio" name="question5"
+										value="Quatro">
+									<label class="custom-control-label" for="customRadio">Quatro</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" id="customRadio2" name="question5"
+										value="Cinquenta">
+									<label class="custom-control-label" for="customRadio2">Cinquenta</label>
+								</div>
+
+								<div class="custom-control custom-radio">
+									<input type="radio" class="custom-control-input" id="customRadio3" name="question5"
+										value="Sete">
+									<label class="custom-control-label" for="customRadio3">Sete</label>
+								</div>
+							</div>
+						</div>
+
+
+						<button class="btn btn--principal btn--done">Acabei!</button>
+						<a class="btn btn--principal" href="./pergunta2.html">Próxima</a>
+					</form>
+				</div>
+				<div class="col-md-6">
+					<div id="after_submit">
+						<p id="number_correct" class="subtitulo mb-2"></p>
+						<p id="message"></p>
+						<img id="picture" class="img-fluid">
+					</div>
+				</div>
+			</div>
+			<footer class="page-footer font-small blue pt-4">
+
+<!-- FIM FORM -->
+
+				<!-- Copyright -->
+				<div class="footer-copyright text-center py-5">© 2019 Copyright:
+					<a href="#"> QuizMania</a>
+				</div>
+				<!-- Copyright -->
+
+			</footer>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="./script.js"></script>
+</body>
+
+</html>

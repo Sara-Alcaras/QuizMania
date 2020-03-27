@@ -1,0 +1,280 @@
+.header {
+	display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+	position: relative;
+    padding-top: 20px;
+	align-items: center;
+	z-index: 12;
+}
+
+.link__sugestao {
+	color: #ffffff;
+}
+
+.link__sugestao:focus, .link__sugestao:hover, .link__sugestao:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sugestao {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.sugestao__formulario {
+	position: absolute;
+    width: 100%;
+    right: 0;
+	display: none;
+	color: #000;
+	background-color: #ffffff;
+    padding: 20px 25px;
+	border-radius: 5px;
+	min-width: 300px;
+}
+
+.sugestao__formulario:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    position: absolute;
+    border-color: transparent transparent #ffffff transparent;
+    top: -20px;
+    left: 50%;
+}
+
+.sugestao__formulario--aberto {
+	display: block;
+}
+
+.btn--principal {
+	border: 2px solid #d2aa6b;
+    border-radius: 24px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+	font-size: 16px;
+	color: #fff;
+	transition: all ease 0.33s;
+}
+
+.btn--pequeno {
+	max-width: 200px;
+}
+
+.btn--principal:hover,
+.btn--principal:focus,
+.btn--principal:active {
+	background-color:#d2aa6b;
+	color: #000;
+}
+
+.btn--submit {
+	color: #000;
+}
+
+.form-label {
+	padding: 10px 0px;
+}
+
+.efeitos {
+	height: 500px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    max-width: 400px;
+    box-sizing: border-box;
+	margin: auto;
+}
+
+.efeito {
+	position: absolute;
+	height: 500px;
+    top: 0;
+}
+
+.efeito--1 {
+	transform: scale(1.5);
+    top: 120px;
+}
+
+
+.efeito--2 {
+	transform: scale(1.5);
+    top: 105px;
+}
+
+.qprincipal {
+	padding: 50px;
+}
+
+.ron {
+	width: 52%;
+    height: 100%;
+    position: absolute;
+    z-index: 8;
+    top: 55%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.harry {
+	width: 80%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hermione {
+	width: 60%;
+    height: 100%;
+    position: absolute;
+    z-index: 8;
+    top: 54%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.altura {
+	height: 500px;
+}
+
+.titulo {
+	font-family: "Bluu Next", "Sofia pro", Arial, Helvetica, sans-serif;
+	font-size: 38px;
+	margin: 20px 0;
+}
+
+.subtitulo {
+	font-family: "Mason Sans OT", "Sofia pro", Arial, Helvetica, sans-serif;
+}
+
+.descricao {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.lista {
+    margin-top: 75px;
+}
+
+.footer-copyright, .footer-copyright a {
+    color: #354156;
+}
+/** Carousel **/
+.owl-carousel {
+    margin-top: 30px;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: all 0.33s ease;
+}
+
+.owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-prev span {
+    font-size: 25px;
+    line-height: 14px;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+    background-color:#d2aa6b;
+    color: #000;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    margin-left: 5px;
+}
+
+.owl-dots,
+.owl-nav {
+    display: inline-block;
+}
+
+.owl-dots {
+    margin-left: 10px;
+}
+
+.owl-nav {
+    margin-top: 25px;
+}
+
+.owl-carousel button.owl-dot {
+    background: rgba(204, 204, 204, 0.5);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.owl-carousel button.owl-dot.active {
+    background: #fff;
+}
+
+.owl-carousel:after {
+    content: '';
+    width: calc(100% - 150px);
+    height: 1px;
+    position: absolute;
+    background: rgba(204, 204, 204, 0.5);
+    bottom: 20px;
+    margin-left: 10px;
+}
+
+#after_submit .subtitulo {
+    font-size: 25px;
+}
+
+#after_submit img {
+    width: 100%;
+}
+
+.center-title {
+    margin: 40px auto;
+}
+
+#message {
+    margin: 10px 0;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.header {
+		padding-top: 45px;
+	}
+
+	.sugestoes {
+		position: absolute;
+		right: 0;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+
+
+/*
