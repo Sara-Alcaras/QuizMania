@@ -1,3 +1,11 @@
 # QuizMania
-Primeiro projeto em css, html e js
+Projeto semestral da faculdade.
+
+## Técnologias usadas:
+## Front-end:
+- HTML
+- CSS
+- JavaScript
+
+
 
